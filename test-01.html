@@ -131,7 +131,6 @@ p.or {
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-6 rfi-form-col">
-                <!-- 2017 RFI RTCC Toronto | survey id: 81486 -->
                 <form method="POST" class="form-get-info-row row" action="http://www.conquercancer.ca/site/Survey">
                     <div class="form-submission-error-col col-xs-12 form-group">
                         <h3 class="red-clr"><i class="fa fa-exclamation-triangle"></i> There was an error submitting the form.</h3>
@@ -174,24 +173,12 @@ p.or {
                             <option value="No">No</option>
                         </select>
                     </div> -->
-                    <div class="hidden-fields hidden">
-                        <!-- <input type="hidden" name="SURVEY_ID" id="SURVEY_ID" value="81486"/>
-                        <input type="hidden" name="cons_info_component" id="cons_info_component" value="t">
-                        <input type="hidden" name="1900_81486_3_84921" id="1900_81486_3_84921" value="Toronto"/>
-                        <input type="hidden" name="1900_81486_4_84922" id="1900_81486_4_84922" value="1581"/>
-                        <input type="hidden" name="USER_HAS_TAKEN" id="USER_HAS_TAKEN" value="null">
-                        <input type="hidden" name="SURVEY_IGNORE_ERRORS" id="SURVEY_IGNORE_ERRORS" value="TRUE">
-                        <input type="hidden" name="QUESTION_STAG_APP_ID" id="QUESTION_STAG_APP_ID" value="">
-                        <input type="hidden" name="QUESTION_STAG_APP_REF_ID" id="QUESTION_STAG_APP_REF_ID" value="">
-                        <input type="hidden" name="QUESTION_STAG_CTX_TYPE" id="QUESTION_STAG_CTX_TYPE" value=""> 
-                        <input type="hidden" name="ERRORURL" id="ERRORURL" value="http://to17.conquercancer.ca/site/PageServer/?pagename=to17_get_info&amp;survey_error=incorrect_info"> -->
-                    </div>
+                    <div class="hidden-fields hidden"></div>
                     <div class="col-xs-12">
-                        <input type="submit" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE" value="Get Info" class="button btn-yellow center-block">
+                        <input type="submit" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE" value="Get Info" class="btn btn-default center-block">
                     </div>
-                </form><!-- end of <form method="POST" -->
-                <p class="text-center or">Or</p>
-                <a href="https://secure2.convio.net/cfrca/site/TRR/Events/Toronto2017?pg=tfind&fr_id=1581&fr_tm_opt=none" class="button btn-yellow center-block btn-reg" title="Join Us in 2017">Register Now</a>
+                </form>
+                
             </div>
         </div>
 
@@ -199,16 +186,10 @@ p.or {
     </div><!-- end of <div id="inside-page-container" -->
 </div>
 <script type="text/javascript">
-/* 2017 RFI RTCC Toronto | survey id: 81486 */
+
 jQuery(document).ready(function(){
     // required fields
     jQuery('input#cons_first_name, input#cons_last_name, input#cons_email, select#1900_81486_2_84920').prop('required', true);
-
-    // var survey_error = getUrlVars()['survey_error'];
-    // if (survey_error == 'incorrect_info'){
-    //     jQuery('.form-submission-error-col').show(500);
-    // }
-
 
     // WRITING HIDDEN INPUT FOR MEDIA SRC
       var urlSource = document.URL.indexOf('s_src=');
@@ -218,6 +199,7 @@ jQuery(document).ready(function(){
       } else {
         jQuery('.hidden-fields').append("<input type=\"hidden\" name=\"source_code\" value='no source' />");
       }
+
 
 // 2017 Toronto
 function Toronto() {
@@ -234,6 +216,7 @@ function Toronto() {
           '<input type="hidden" name="QUESTION_STAG_APP_REF_ID" id="QUESTION_STAG_APP_REF_ID" value="">'+
           '<input type="hidden" name="QUESTION_STAG_CTX_TYPE" id="QUESTION_STAG_CTX_TYPE" value="">'+ 
           '<input type="hidden" name="ERRORURL" id="ERRORURL" value="http://to17.conquercancer.ca/site/PageServer/?pagename=to17_get_info&amp;survey_error=incorrect_info">'
+
         ;
 
     var selectOptionsToronto = 
@@ -267,6 +250,7 @@ function Toronto() {
 
       $('.hidden-fields').empty().append(hiddenInputsToronto);
 
+      // there's a better way to do this instead of using this div
       $('.media').empty().append(selectOptionsToronto);
 
 };
@@ -317,7 +301,66 @@ function Alberta() {
 
         // add inputs to page
         $('.hidden-fields').empty().append(hiddenInputsAlberta);
+
+        // there's a better way to do this instead of using this div
         $('.media').empty().append(selectOptionsAlberta);
+
+};
+
+// 2017 Vancouver
+function Vancouver() {
+
+    var hiddenInputsVancouver = 
+
+        '<input type="hidden" name="SURVEY_ID" id="SURVEY_ID" value="81551"/>'+
+        '<input type="hidden" name="cons_info_component" id="cons_info_component" value="t">'+
+        '<input type="hidden" name="1900_81551_3_85161" id="1900_81551_3_85161" value="Vancouver 2017 RTCC"/>'+
+        '<input type="hidden" name="1900_81551_4_85162" id="1900_81551_4_85162" value="1593"/>'+
+        '<input type="hidden" name="USER_HAS_TAKEN" id="USER_HAS_TAKEN" value="null">'+
+        '<input type="hidden" name="SURVEY_IGNORE_ERRORS" id="SURVEY_IGNORE_ERRORS" value="TRUE">'+
+        '<input type="hidden" name="QUESTION_STAG_APP_ID" id="QUESTION_STAG_APP_ID" value="">'+
+        '<input type="hidden" name="QUESTION_STAG_APP_REF_ID" id="QUESTION_STAG_APP_REF_ID" value="">'+
+        '<input type="hidden" name="QUESTION_STAG_CTX_TYPE" id="QUESTION_STAG_CTX_TYPE" value="">'+
+        '<input type="hidden" name="ERRORURL" id="ERRORURL" value="http://va17.conquercancer.ca/site/PageServer/?pagename=va17_get_info&amp;survey_error=incorrect_info">'
+        
+    ;
+
+    var selectOptionsVancouver = 
+
+        '<select class="form-control" name="1900_81551_2_85160" id="1900_81551_2_85160" onchange="choiceSelected(\'1900_81551_2_85160\', this.selectedIndex);">'+
+        '<option selected disabled>Please select response</option>'+
+        '<option value="A current Rider referred me">A current Rider referred me</option>'+
+        '<option value="A past Rider referred me">A past Rider referred me</option>'+
+        '<option value="I found out through my company">I found out through my company</option>'+
+        '<option value="Friend or relative">Friend or relative</option>'+
+        '<option value="Print - Globe and Mail">Print - Globe and Mail</option>'+
+        '<option value="Facebook">Facebook</option>'+
+        '<option value="Google">Google</option>'+
+        '<option value="Instagram">Instagram</option>'+
+        '<option value="LinkedIn">LinkedIn</option>'+
+        '<option value="Twitter">Twitter</option>'+
+        '<option value="Yahoo">Yahoo</option>'+
+        '<option value="YouTube">YouTube</option>'+
+        '<option value="Community event">Community event</option>'+
+        '<option value="Orientation">Orientation</option>'+
+        '<option value="Newspaper article">Newspaper article</option>'+
+        '<option value="I am a BCCF employee">I am a BCCF employee</option>'+
+        '<option value="I am a Silver Wheaton employee">I am a Silver Wheaton employee</option>'+
+        '<option value="Poster or flyer (not in-store display / pamphlet)">Poster or flyer (not in-store display / pamphlet)</option>'+
+        '<option value="Previous Ride to Conquer Cancer">Previous Ride to Conquer Cancer</option>'+
+        '<option value="- - -">- - -</option>'+
+        '</select>'
+        
+        ;
+
+        // add inputs to page
+        $('.hidden-fields').empty().append(hiddenInputsVancouver);
+
+        /* 
+        there's a better way to do this instead of using this div
+        I have to include the 'onchange' attr on the select
+        */
+        $('.media').empty().append(selectOptionsVancouver);
 
 };
 
@@ -332,9 +375,9 @@ function Alberta() {
             Alberta();
         } 
 
-        // else if () {
-
-        // } 
+        else if ($("#event-select").val()=="1593") {
+            Vancouver();
+        } 
 
         // else if () {
 
