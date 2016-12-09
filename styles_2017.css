@@ -1,0 +1,350 @@
+/* Overall Styles */
+
+@font-face {
+    font-family: 'euro';
+    src: url('fonts/EurostileRegular.eot');
+    src: url('fonts/EurostileRegular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/EurostileRegular.woff2') format('woff2'),
+         url('fonts/EurostileRegular.woff') format('woff'),
+         url('fonts/EurostileRegular.ttf') format('truetype'),
+         url('fonts/EurostileRegular.svg#EurostileRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#ex-rfi {
+  background: #000;
+  
+}
+
+.container {
+  padding: 0;
+  background-image: url(../images/landing-bg-03.jpg);
+  background-size: 100%, auto!important;
+}
+
+.request-information {
+  background: #fefefe;
+  /*margin-top: 200px;*/
+  margin-top: 30%;
+  padding: 0;
+
+}
+
+/* RFI Header */
+
+/*.ex-logo {
+    display: block;
+    margin: 25px auto;
+    max-width: 50%;
+    height: auto;
+  }*/
+  .ex-logo {
+  	max-width: 30%;
+  	float: right;
+  	margin: 15px;
+  }
+
+h1.main-title {
+  border-bottom: 5px #ffd300 solid;
+  font-weight: normal;
+  margin: 0;
+  padding: 15px 0 11px 15px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'euro', sans-serif;
+  background: #0070b9;
+  color: #ffd51e;
+  text-transform: uppercase;
+}
+
+
+/* Left Side Content */
+
+.left-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #056ebf;
+  font-family: "Oswald", sans-serif;
+  line-height: 25px;
+  margin-bottom: 0px;
+}
+.left-content h3:first-child {
+  margin-bottom: 20px;
+}
+
+.left-content p, .left-content ul li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+.left-content p {
+  margin-bottom: 25px;
+}
+.left-content h2 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* Right Side RFI */
+
+.right-content {
+  background: #f9f9f9;
+  padding-bottom: 25px;
+}
+.request-information p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.request-information form {
+  padding-left: 30px;
+}
+.request-information form .hear-about-us .form-group {
+  padding-top: 15px;
+}
+.request-information form input[type="text"], .request-information form input[type="email"], .request-information form select {
+  border: 2px #ffd101 solid;
+}
+
+.request-information form button.btn {
+  height: 65px;
+  width: 100%;
+  display: block;
+  border-bottom: 5px #ffd300 solid;
+  color: #056ebf;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 6px 35px 0 35px;
+  font-weight: 600;
+  background: #ffd51e;
+  background: -moz-linear-gradient(top, #ffd51e 0%, #ffe16f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffd51e), color-stop(100%, #ffe16f));
+  background: -webkit-linear-gradient(top, #ffd51e 0%, #ffe16f 100%);
+  background: -o-linear-gradient(top, #ffd51e 0%, #ffe16f 100%);
+  background: -ms-linear-gradient(top, #ffd51e 0%, #ffe16f 100%);
+  background: linear-gradient(to bottom, #ffd51e 0%, #ffe16f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd51e', endColorstr='#ffe16f',GradientType=0 );
+}
+.request-information form button.btn:hover {
+  background: #ffd51e;
+}
+.request-information form .updates p {
+  margin-top: 0px;
+  color: #000;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 12px;
+}
+.request-information form .form-section {
+  margin-bottom: 45px;
+  position: relative;
+}
+.request-information form .form-section .section-number {
+  position: absolute;
+  top: -5px;
+  left: -30px;
+  background: #ffd101;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+.request-information form .form-section .section-number span {
+  color: #056ebf;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  top: 2px;
+  left: 1px;
+}
+.request-information form h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #056ebf;
+  font-family: "Oswald", sans-serif;
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.request-information form p.message {
+  margin-top: 0px;
+  color: #056ebf;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.request-information form .form-group {
+  margin-bottom: 0px;
+  position: relative;
+}
+.request-information form .form-group label {
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: left;
+}
+.ex-cd-sms {
+  text-align: center;
+}
+#success-message {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.2);
+  display: none;
+}
+#success-message h5 {
+  top: 25%;
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+  background: #dff0d8;
+  border: 3px solid #468847;
+  color: #468847;
+
+}
+
+.validate-icon {
+  position: absolute;
+  left: -25px;
+  top: 25px;
+}
+i.success, i.fail {
+  font-size: 35px;
+  position: absolute;
+}
+i.success {
+  color: #5cb85c;
+}
+i.fail {
+  color: #d9534f;
+}
+.hear-about-us .validate-icon, .updates .validate-icon {
+  top: 0;
+}
+.ex-dc-tracking {
+  display: none;
+}
+.input-container {
+  padding: 0 15px 30px;
+}
+.request-information form .form-group label.fail {
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  text-transform: none;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  left: 0;
+  right: 0;
+  color: #d9534f;
+}
+.fast {
+  -webkit-animation-duration: 500ms;
+  -moz-animation-duration: 500ms;
+  -ms-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  .container {
+    background: url('../images/landing-bg-mobile.jpg');
+  }
+  .request-information {
+    margin-top: 0;
+  }
+  .left-content h2 {
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 10px solid #056ebf;
+    position: relative;
+    z-index: 1;
+  }
+  .right-content {
+    padding-top: 25px;
+  }
+  
+  /* clear fixing */
+  .container > a:before,
+  .container > a:after {
+      content: " ";
+      display: table;
+  }
+  
+  .container > a:after {
+      clear: both;
+  }
+  
+  .container > a {
+    *zoom: 1;
+  }
+  
+  h1.main-title {
+  	font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .request-information form .form-group label {
+    padding-left: 35px;
+  }
+  .request-information form {
+    padding-left: 50px;
+  }
+  .validate-icon {
+    left: -13px;
+    top: 0;
+  }
+  .request-information form .form-section .section-number {
+    left: -45px;
+  }
+  select {
+    width: 97% !important;
+    position: relative;
+    left: 3%;
+  }
+}
+
+@media (max-width: 767px) {
+  .right-content, .left-content {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .right-content {
+    
+    top: -5px;
+    position: relative;
+  }
+  .request-information form .form-section .section-number {
+    left: -45px;
+  }
+
+}
+@media (min-width: 992px) {
+  .right-content, .left-content {
+    padding-top: 25px;
+  }
+  .left-content h3 {
+    margin-top: 0;
+  }
+  .left-content {
+    padding-right: 30px;
+  }
+  .request-information form .form-section .section-number {
+    left: -60px;
+  }
+  .request-information form .form-group label {
+    padding-right: 0;
+  }
+  .validate-icon {
+    top: 0;
+  }
+}
