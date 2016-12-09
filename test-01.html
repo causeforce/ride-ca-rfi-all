@@ -4,21 +4,52 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Ride to Conquer Cancer®, fighting breast, bladder, brain, prostate, colon, kidney, testicular, lymphoma, leukemia and childhood cancers.</title>
+    <title>The Ride to Conquer Cancer fighting breast, bladder, brain, prostate, colon, kidney, testicular, lymphoma, leukemia and childhood cancers.</title>
     <meta name="description" content="The Ride to Conquer Cancer - Request Information" />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="cancer, cancers, breast, bladder, brain, prostate, colon, kidney, testicular, lymphoma, leukemia" />
+    
     <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
-
-    <!-- Bootstrap -->
-    <link href="assets2016/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets2016/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="assets2016/css/animate.css" rel="stylesheet">
-    <!-- <link href="assets2016/css/styles_2017.css" rel="stylesheet"> -->
 
-    <style>
-LABEL {
-    white-space: initial;
+    <!-- <link href="../assets2017/css/fonts.css" rel="stylesheet"> -->
+<style>
+@font-face {
+    font-family: 'Futura_Heavy';
+    src: url(../assets2017/fonts/FuturaLTPro-Heavy.otf);
+    font-weight: normal;
 }
+@font-face {
+    font-family: 'Futura_Bold';
+    src: url(../assets2017/fonts/FuturaLTPro-Bold.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Futura_Medium';
+    src: url(../assets2017/fonts/FuturaLTPro-Medium.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Futura_Light';
+    src: url(../assets2017/fonts/FuturaLTPro-Light.otf);
+    font-weight: normal;
+}
+h1 {
+    font-family: 'Futura_Bold';
+}
+h2, h3 {
+    font-family: 'Futura_Heavy';
+}
+p {
+   font-family: 'Futura_Medium'; 
+}
+.header-image {
+    padding: 0;
+}
+/*LABEL {
+    white-space: initial;
+}*/
 /*.header-row,
 .footer-wrapper {
     display: none !important;
@@ -26,52 +57,53 @@ LABEL {
 #content {
     margin-top: 0;
 }*/
-.form-submission-error-col {
+/*.form-submission-error-col {
     display: none;
-}
-.form-get-info-row label {
+}*/
+form label {
     display: inline-block;
     color: #006496;
     font-size: 18px;
+    font-family: 'Futura_Light', sans-serif;
 }
 i.fa-asterisk {
     color: #E03A3E;
 }
-div.inside-page-content-row {
+/*div.inside-page-content-row {
     padding: 30px;
 }
-.rfi-copy {
+.copy {
     padding: 0 15px 0 0;
 }
-.rfi-copy p {
+.copy p {
     color: #3c3c3c;
 }
-.rfi-copy h3 {
+.copy h3 {
     line-height: 1.4;
 }
-.rfi-copy h4 {
+.copy h4 {
     margin-bottom: 20px;
-}
-.form-get-info-row input[type="text"], a.btn-reg:link {
+}*/
+form input[type="text"], a.btn-reg:link {
     display: block;
     min-height: 44px;
     border: 2px solid #006496;
     width: 100%;
     border-radius:0;
 }
-a.btn-reg:link {
+/*a.btn-reg:link {
     padding: 10px;
     text-align: center;  
     border:0;
-}
-.form-get-info-row input[type="submit"] {
+}*/
+form input[type="submit"] {
     width: 100%;
     margin: 10px 0;
     min-height: 44px;
     font-size: 20px;
     padding: 10px;
 }
-.form-get-info-row select {
+form select {
     display: block;
     border: 2px solid #00609C;
     border-radius: 0px;
@@ -88,14 +120,14 @@ a.btn-reg:link {
     background-color: #fff;
     width: 100%;
 }
-p.or {
+/*p.or {
     margin: 10px auto 20px;
 }
 @media screen and (max-width:767px) {
     div.inside-page-content-row {padding: 30px 15px;}
-    .rfi-copy {padding: 0 0 30px;}
+    .copy {padding: 0 0 30px;}
     .rfi-form-col {padding-bottom: 30px;}
-}
+}*/
 </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -105,40 +137,52 @@ p.or {
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="assets2016/js/jquery-1.11.2.min.js"></script>
-    <script src="assets2016/js/bootstrap.min.js"></script>
+    <!-- <script src="assets2016/js/jquery-1.11.2.min.js"></script> -->
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">     
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="assets2016/js/jquery.validate.min.js"></script>
     <script src="assets2016/js/additional-methods.min.js"></script>
     <!-- <script src="assets2016/js/custom3.js"></script> -->
   </head>
-<body id="ex-rfi">
-  
-<div id="inside-page-content-wrapper" class="content-wrapper-row row">
-    <div id="inside-page-container" class="box-shadow-container container">
-        <div class="inside-page-content-row sm-row margin-btm-30">
-            <div class="col-xs-12 col-sm-6 rfi-copy">
-                <h3 class="text-center">The Enbridge<sup>&reg;</sup> Ride to Conquer Cancer<sup>&reg;</sup><br />benefiting Princess Margaret Cancer Centre<br />Turns 10 in 2017</h3>
-                <h4 class="text-center">and We Want YOU There For It!</h4>
-                <p>The last decade has seen many cancer care breakthroughs and countless lives saved, impacting us all.</p>
-                <p>Join us for what will be an epic celebration! It&#8217;s your chance to experience firsthand the dynamic energy of riding with thousands of other passionate participants, each driving towards a common goal: to conquer cancer in our lifetime.</p>
-                <br>
-                <p>You&#8217;ll be supported every step of the way with:</p>
+<body>
+<div id="rfi-all-events">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 header-img">
+            <img src="http://placehold.it/1660x504" class="img-responsive" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Learn more about the Ride to Conquer Cancer</h1>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 copy">
+                <h2>The Ride to Conquer Cancer<sup>&reg;</sup> is a cycling journey, a fundraising crusade and your chance to BE EPIC.</h2>
+                <p>Over two days and 200 kilometres, we will take to the majestic Canadian countryside in solidarity and promise to show that cancer is no match against our conviction to conquer it.</p>
+                <h3>We provide support for your Epic Ride:</h3>
                 <ul>
-                  <li>Coaching and training tips</li>
-                  <li>Training rides in your area</li>
-                  <li>A personal webpage for fundraising</li>
-                  <li>Informative Orientation sessions</li>
+                  <li>Year-round Ride Guide assistance</li>
+                  <li>Informative orientation sessions</li>
+                  <li>Comprehensive online Participant Centre</li>
+                  <li>Frequent local training rides</li>
                 </ul>
+                <p>The money you raise through The Ride directly supports local cancer patients and their families, so join our epic community now and register for The Ride today!</p>
             </div>
-            <div class="col-xs-12 col-sm-6 rfi-form-col">
+            <div class="col-xs-12 col-sm-6">
                 <form method="POST" class="form-get-info-row row" action="http://www.conquercancer.ca/site/Survey">
-                    <div class="form-submission-error-col col-xs-12 form-group">
+                    <!-- <div class="form-submission-error-col col-xs-12 form-group">
                         <h3 class="red-clr"><i class="fa fa-exclamation-triangle"></i> There was an error submitting the form.</h3>
-                    </div>
+                    </div> -->
                     <div class="col-xs-12 form-group">
                         <label for="cons_phone">Choose your event</label>&nbsp;<i class="fa fa-asterisk"></i>
-                        <select name="event-select"  class="rfi_id form-control" id="event-select">
-                          <option selected disabled>Choose your event</option>
+                        <select name="event-select"  class="rfi_id form-control" id="event-select" required>
+                          <option value="" selected disabled>Choose your event</option>
                           <option value="1592">Alberta Ride</option>
                           <option value="1593">BC Ride</option>
                           <option value="1581">Ontario Ride</option>
@@ -178,9 +222,8 @@ p.or {
                         <input type="submit" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE" value="Get Info" class="btn btn-default center-block">
                     </div>
                 </form>
-                
             </div>
-        </div>
+        </div><!-- .row -->
 
 
     </div><!-- end of <div id="inside-page-container" -->
@@ -272,7 +315,7 @@ function Toronto() {
     var selectOptionsToronto = 
 
         '<select class="form-control" name="1900_81486_2_84920" id="1900_81486_2_84920" onchange="choiceSelected(\'1900_81486_2_84920\', this.selectedIndex);">'+
-        '<option selected disabled>Please select response</option>'+
+        '<option value="" selected disabled>Please select response</option>'+
         '<option value="Radio - The Edge (102.1 FM)">Radio - The Edge (102.1 FM)</option>'+
         '<option value="Radio Q107 (107.1 FM)">Radio Q107 (107.1 FM)</option>'+
         '<option value="Radio - 680 News (680 AM)">Radio - 680 News (680 AM)</option>'+
@@ -325,7 +368,7 @@ function Alberta() {
     var selectOptionsAlberta = 
 
         '<select class="form-control" name="1900_81548_2_85142" id="1900_81548_2_85142" onchange="choiceSelected(\'1900_81548_2_85142\', this.selectedIndex);">'+
-        '<option selected disabled>Please select response</option>'+
+        '<option value="" selected disabled>Please select response</option>'+
         '<option value="A current Rider referred me">A current Rider referred me</option>'+
         '<option value="A past Rider referred me">A past Rider referred me</option>'+
         '<option value="I found out through my company">I found out through my company</option>'+
@@ -378,7 +421,7 @@ function Vancouver() {
     var selectOptionsVancouver = 
 
         '<select class="form-control" name="1900_81551_2_85160" id="1900_81551_2_85160" onchange="choiceSelected(\'1900_81551_2_85160\', this.selectedIndex);">'+
-        '<option selected disabled>Please select response</option>'+
+        '<option value="" selected disabled>Please select response</option>'+
         '<option value="A current Rider referred me">A current Rider referred me</option>'+
         '<option value="A past Rider referred me">A past Rider referred me</option>'+
         '<option value="I found out through my company">I found out through my company</option>'+
@@ -436,7 +479,7 @@ function Montreal() {
     var selectOptionsMontreal = 
 
         '<select class="form-control" name="1900_81549_2_85149" id="1900_81549_2_85149" onchange="choiceSelected(\'1900_81549_2_85149\', this.selectedIndex);">'+
-        '<option disabled selected>Please select response</option>'+
+        '<option value="" disabled selected>Please select response</option>'+
         '<option value="Radio - Virgin 96">Radio - Virgin 96</option>'+
         '<option value="Radio - Energie 94.3">Radio - Energie 94.3</option>'+
         '<option value="Radio - Rouge 107.3">Radio - Rouge 107.3</option>'+
