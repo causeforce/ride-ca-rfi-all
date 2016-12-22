@@ -50,6 +50,7 @@ $(document).ready(function(){
 
     
     // WRITING HIDDEN INPUT FOR MEDIA SRC via Calvin Jenkins 2013
+    // not working? Support ticket in with Convio 12-21-16 - Matt Gorski
       var urlSource = document.URL.indexOf('s_src=');
       
       if (urlSource !== -1) {
@@ -92,8 +93,9 @@ function Toronto() {
         '<option value="A current Rider referred me">A current Rider referred me</option>'+
         '<option value="A past Rider referred me">A past Rider referred me</option>'+
         '<option value="I found out through my company">I found out through my company</option>'+
-        '<option value="Canadian Cyclist">Canadian Cyclist</option>'+
         '<option value="Friend or relative">Friend or relative</option>'+
+        '<option value="Canadian Cycling Magazine">Canadian Cycling Magazine</option>'+
+        '<option value="Canadian Running Magazine">Canadian Running Magazine</option>'+
         '<option value="Print - Globe and Mail">Print - Globe and Mail</option>'+
         '<option value="Facebook">Facebook</option>'+
         '<option value="Google">Google</option>'+
@@ -144,8 +146,9 @@ function Alberta() {
         '<option value="A past Rider referred me">A past Rider referred me</option>'+
         '<option value="I found out through my company">I found out through my company</option>'+
         '<option value="Friend or relative">Friend or relative</option>'+
+        '<option value="Canadian Cycling Magazine">Canadian Cycling Magazine</option>'+
+        '<option value="Canadian Running Magazine">Canadian Running Magazine</option>'+
         '<option value="Print - The Globe and Mail">Print - The Globe and Mail</option>'+
-        '<option value="Canadian Cyclist">Canadian Cyclist</option>'+
         '<option value="Facebook">Facebook</option>'+
         '<option value="Google">Google</option>'+
         '<option value="Instagram">Instagram</option>'+
@@ -198,7 +201,8 @@ function Vancouver() {
         '<option value="A past Rider referred me">A past Rider referred me</option>'+
         '<option value="I found out through my company">I found out through my company</option>'+
         '<option value="Friend or relative">Friend or relative</option>'+
-        '<option value="Canadian Cyclist">Canadian Cyclist</option>'+
+        '<option value="Canadian Cycling Magazine">Canadian Cycling Magazine</option>'+
+        '<option value="Canadian Running Magazine">Canadian Running Magazine</option>'+
         '<option value="Print - Globe and Mail">Print - Globe and Mail</option>'+
         '<option value="Facebook">Facebook</option>'+
         '<option value="Google">Google</option>'+
@@ -260,8 +264,9 @@ function Montreal() {
         '<option value="A current Rider referred me">A current Rider referred me</option>'+
         '<option value="A past Rider referred me">A past Rider referred me</option>'+
         '<option value="I found out through my company">I found out through my company</option>'+
+        '<option value="Canadian Cycling Magazine">Canadian Cycling Magazine</option>'+
+        '<option value="Canadian Running Magazine">Canadian Running Magazine</option>'+
         '<option value="Print - The Globe and Mail">Print - The Globe and Mail</option>'+
-        '<option value="Canadian Cyclist">Canadian Cyclist</option>'+
         '<option value="Facebook">Facebook</option>'+
         '<option value="Google">Google</option>'+
         '<option value="Instagram">Instagram</option>'+
