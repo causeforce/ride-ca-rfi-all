@@ -5,7 +5,9 @@
 
 Canadian Cyclist Campaign Landing Page. This form combines 4 different events' information which is selected by the first drop-down. Select options are appended, as well as hidden inputs. The form is submitted to Blackbaud servers for processing.
 
-*RFI form needs:*
+
+*RFI form needs*
+
 1. Event Select Option
 
     This value determines what `<options>` will be appended to the "How did you hear about us", as well as the hidden inputs (see #4).
